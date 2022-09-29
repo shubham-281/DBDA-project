@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href='/static\index33.css'>
+    <title>Home Rent Prediction</title>
+</head>
+
+<body >
+    
+    <h1 class="title">Home Rent Prediction</h1>
+        <div class="container">
+            
+            <form  action="/result" method="POST" >
+
+                <!-- bedroom-->
+            <div class="mb-3">
+                <label for="bedroom" class="form-label">Bedroom(BHK) :</label>
+                <select class="form-select" id="bedroom" name="bedroom" aria-label="Default select example">
+                    <option selected value=1>2</option>
+                    <option value=1>1</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option> 
+                     
+                    </select>
+            </div>
+            <!-- Area -->
+            <div class="mb-3">
+                <label for="area" class="form-label">Area : </label>
+                
+                    <input type="number" id="area" class="form-control"  name="area" value = 1000 placeholder="Area">
+                    
+                    
+            </div>
+
+            <!-- Locality -->
+            <div class="mb-3">
+                <label for="locality" class="form-label">Locality:</label>
+                
+                    <input type="text" id="locality" class="form-control"  name="locality" placeholder="Locality" value = "Hinjewadi" list = 'localityList'>
+                    <datalist id='localityList'>
+                        <option value="Akurdi">Akurdi</option>
+                        <option value="Warje">Warje</option>
+                        <option value="Hadapsar">Hadapsar</option>
+                        <option value="Alandi">Alandi</option>
+                        <option value="Hinjewadi">Hinjewadi</option>
+                    </datalist>
+                    
+            </div>
+            
+                <!-- floor -->
+                <div class="mb-3">
+                    <label for="floor" class="form-label">Floor number:</label>
+                    
+                        <input type="number" id = "floor" class="form-control" value = 1 name="floor" placeholder="Floor number">
+                        
+                </div>
+    
+                <!-- Brokerage  -->
+                <div class="mb-3">
+                    <label for="brokerage" class="form-label">Brokerage amount:</label>
+                    
+                        <input type="number" id="brokerage" class="form-control" value = 0 name="brokerage" placeholder="Brokerage Amount">
+                        
+                </div>
+
+                <!-- deposit  -->
+                <div class="mb-3">
+                    <label for="deposit" class="form-label">Deposit amount:</label>
+                    
+                        <input type="number" id="deposit" class="form-control" value = 0 name="deposit" placeholder="Deposit Amount">
+                        
+                </div>
+    
+                <!-- Maintaince -->
+                <div class="mb-3">
+                    <label for="maintainance" class="form-label">Maintainance Amount:</label>
+                    
+                        <input type="number" id = "maintainance" class="form-control"  value = 0 name="maintainance" placeholder="Maintaince Amount">
+                        
+                </div>
+    
+    
+                <!-- POOJA ROOM-->
+            <div class="mb-3">
+                <label for="pooja" class="form-label">Pooja Room:</label>
+                <select class="form-select" id="pooja" name="pooja" aria-label="Default select example">
+                    <option selected value="No">No</option>
+                    <option value="Yes">Yes</option> 
+                     
+                    </select>
+            </div>
+
+                <!-- SERVANT ROOM-->
+                <div class="mb-3">
+                    <label for="servant" class="form-label">Servant Room:</label>
+                    <select class="form-select" id="servant" name="servant" aria-label="Default select example">
+                        <option selected value="No">No</option>
+                        <option value="Yes">Yes</option> 
+                         
+                        </select>
+                </div>
+
+                    <!-- Light bill-->
+            <div class="mb-3">
+                <label for="lightbill" class="form-label">Light Bill:</label>
+                <select class="form-select" id="lightbill" name="lightbill" aria-label="Default select example">
+                    <option selected value="No">No</option>
+                    <option value="Yes">Yes</option> 
+                     
+                    </select>
+            </div>
+                <!-- Study  ROOM-->
+                <div class="mb-3">
+                    <label for="study" class="form-label">Study Room:</label>
+                    <select class="form-select" id="study" name="study" aria-label="Default select example">
+                        <option selected value="No">No</option>
+                        <option value="Yes">Yes</option> 
+                         
+                        </select>
+                </div>
+
+                    <!-- Store ROOM-->
+            <div class="mb-3">
+                <label for="store" class="form-label">Store Room:</label>
+                <select class="form-select" id="store" name="store" aria-label="Default select example">
+                    <option selected value="No">No</option>
+                    <option value="Yes">Yes</option> 
+                     
+                    </select>
+            </div>
+
+                <!--Powerbackup-->
+                <div class="mb-3">
+                    <label for="powerbackup" class="form-label">Powerbackup:</label>
+                    <select class="form-select" id="powerbackup" name="powerbackup" aria-label="Default select example">
+                        <option selected value=0>0</option>
+                        <option value=1>1</option> 
+                         
+                        </select>
+                </div>
+
+                    <!--Parking-->
+            <div class="mb-3">
+                <label for="parking" class="form-label">Parking:</label>
+                <select class="form-select" id="parking" name="parking" aria-label="Default select example">
+                    <option selected value=0>0</option>
+                    <option value=1>1</option> 
+                     
+                    </select>
+            </div>
+                <!--furnishing-->
+                <div class="mb-3">
+                    <label for="furnishing" class="form-label">Furnishing type:</label>
+                    <select class="form-select" id="furnishing" name="furnishing" aria-label="Default select example">
+                        <option selected value="Unfurnished">Unfurnished</option>
+                        <option value="Furnished">Furnished</option>
+                         
+                        </select>
+                </div>
+
+                <!--floor type-->
+                <div class="mb-3">
+                    <label for="floor" class="form-label">Floor Type:</label>
+                    <select class="form-select" id="floor" name="floorType" aria-label="Default select example">
+                        <option selected value="Not provided">Not provided</option>
+                        <option value="Ceramic">Ceramic</option> 
+                        <option value="Concrete">Concrete</option>
+                        <option value="Granite">Granite</option>
+                        <option value="Cement">Cement</option>
+                        <option value="Marble">Marble</option> 
+                        <option value="Mosaic">Mosaic</option>
+                        <option value="Polished concrete">Polished Concrete</option>
+                        <option value="Spartex">Spartex</option>
+                        <option value="Vinyl">Vinyl</option>
+                        <option value="Wood">Wood</option> 
+                        </select>
+                </div>
+
+             
+           
+            <div >
+                <button type="submit" class="btn-primary">Predict</button>
+            </div>
+        </form>
+        </div>    
+    </body>
+
+</html>
