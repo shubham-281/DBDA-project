@@ -734,8 +734,8 @@ def home1():
         x[11] = deposit
         x[12] = maintainance
         x[13] = address_number
-        x[28] = 0
-        x[29] = 0
+        x[28] = 1
+        x[29] = 1
 
         if fur_index >= 0:
             x[fur_index] = 1
