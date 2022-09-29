@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 100px;
+    color: black;
+    background-color:lightsteelblue;
+    padding: 100px;
+}
+.homelink{
+    font-size: 30px;
+}
